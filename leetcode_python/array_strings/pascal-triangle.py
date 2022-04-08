@@ -7,10 +7,10 @@ class Solution(object):
 
         result = []
 
-        current = [1] * 1
+        current = [1]
         result.append(current)
         for i in range(2, numRows+1):
-            temp = [1] * 1
+            temp = [1]
 
             length = len(current)
             index = 1
