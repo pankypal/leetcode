@@ -17,9 +17,7 @@ class Solution(object):
 
         for i in range(len_hay-len_needle+1):
             j = 0
-            temp = i
-            while j < len_needle and haystack[temp] == needle[j]:
-                temp += 1
+            while j < len_needle and haystack[i+j] == needle[j]:
                 j += 1
 
             if j == len_needle:
@@ -29,4 +27,4 @@ class Solution(object):
         
 
 solution = Solution()
-print(solution.strStr("a", "a"))
+print(solution.strStr("hello", "ll"))
