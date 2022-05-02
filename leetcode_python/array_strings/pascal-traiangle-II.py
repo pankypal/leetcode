@@ -1,15 +1,12 @@
 class Solution(object):
-    def generate(self, numRows):
+    def getRow(self, rowIndex):
         """
-        :type numRows: int
-        :rtype: List[List[int]]
+        :type rowIndex: int
+        :rtype: List[int]
         """
-
-        result = []
 
         current = [1]
-        result.append(current)
-        for i in range(2, numRows+1):
+        for i in range(1, rowIndex+1):
             temp = [1]
 
             length = len(current)
@@ -20,11 +17,10 @@ class Solution(object):
             temp.append(1)
 
             current = temp
-            result.append(current)
 
     
-        return result
+        return current
 
         
 solution = Solution()
-print(solution.generate(2))
+print(solution.getRow(1))
