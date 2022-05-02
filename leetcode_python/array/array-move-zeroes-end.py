@@ -11,19 +11,12 @@ class Solution(object):
         count_zeros = 0
         for i in range(0, len(nums)):
             if nums[i] != 0:
-                nums[read_index] = nums[i]
+                nums[read_index], nums[i] = nums[i], nums[read_index]
                 read_index += 1
-            else:
-                count_zeros += 1
 
-        end = len(nums) - 1
-        while count_zeros > 0:
-            nums[end] = 0
-            end -= 1
-            count_zeros -= 1
 
 
 solution = Solution()
-nums =  [0, 0, 0, 0]
+nums =  [0, 2, 0, 5]
 solution.moveZeroes(nums)
 print(nums)
