@@ -21,4 +21,4 @@ class Solution(object):
 
 
 solution = Solution()
-print(solution.isValid(")"))
+print(solution.isValid("{[()]}"))
