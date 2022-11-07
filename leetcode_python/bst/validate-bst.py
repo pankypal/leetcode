@@ -31,8 +31,8 @@ class Solution(object):
 
 solution = Solution()
 root = TreeNode(3)
-# root.left = TreeNode(1)
-# root.right = TreeNode(5)
-# root.right.left = TreeNode(4)
-# root.right.right = TreeNode(6)
+root.left = TreeNode(1)
+root.right = TreeNode(5)
+root.right.left = TreeNode(4)
+root.right.right = TreeNode(6)
 print(solution.isValidBST(root))
