@@ -1,6 +1,3 @@
-from numpy import cumsum
-
-
 class Solution(object):
     def findMaxConsecutiveOnes(self, nums):
         max_so_far = 0
